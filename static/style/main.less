@@ -3,6 +3,7 @@ body {
 
 }
 
+
 .screen_container_1 {
   background: url(../img/bg_screen_1.jpg) no-repeat top center;
   background-size: cover;
@@ -14,6 +15,9 @@ body {
   position: fixed !important;
 }
 
+
+
+
 .screen_container_2 {
   background: url(../img/bg_screen_2.jpg) no-repeat top center;
   background-size: cover;
@@ -22,6 +26,19 @@ body {
   position: absolute;
   top: 80%;
   left: 0;
+  color: #fff;
+}
+
+/* Responsive: mobile version < 1440px */
+@media screen and (max-width: 1440px) {
+
+  .screen_container_1 {
+    background: url(../img/bg_screen_1.jpg) no-repeat top center;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+  }
+
 }
 
 @import "mobile.less";
