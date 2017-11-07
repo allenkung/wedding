@@ -11,13 +11,40 @@
   <body id="wedding">
 
     <div id="main">
-      <img src="static/img/2x/header.jpg" alt="" class="pure-img">
-      <img src="static/img/2x/section_1.jpg" alt="" class="pure-img">
-      <img src="static/img/2x/section_2.jpg" alt="" class="pure-img">
-      <img src="static/img/2x/section_3.jpg" alt="" class="pure-img">
-      <img src="static/img/2x/section_4.jpg" alt="" class="pure-img">
-      <img src="static/img/2x/section_5.jpg" alt="" class="pure-img">
-    </div>
+      <nav id="main-nav">
+        <ul class="btn">
+          <li class="invitation">邀请函 <span>Invitation</span></li>
+          <li class="schedule">日 程 <span>Schedule</span></li>
+          <li class="address">地 点 <span>Address</span></li>
+          <li><a href="https://www.allenkung.com/blog/categories/wedding/" target="_blank">进 展 <span>News</span></a></li>
+        </ul>
+      </nav>
 
+      <div class="container"></div>
+
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('.container').load('./invitation.html');
+
+        $('.btn .invitation').click(function() {
+          $('.container').load('./invitation.html',function(){
+            /* Stuff to do after the page is loaded */
+          });
+        });
+        $('.btn .schedule').click(function() {
+          $('.container').load('./schedule.html',function(){
+            /* Stuff to do after the page is loaded */
+          });
+        });
+        $('.btn .address').click(function() {
+          $('.container').load('./address.html',function(){
+            /* Stuff to do after the page is loaded */
+          });
+        });
+      });
+    </script>
   </body>
 </html>

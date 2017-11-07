@@ -14,12 +14,55 @@ html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
     font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
 
+a {
+  color: white;
 }
 
 #main {
   max-width: 1000px;
   margin: 0 auto;
+  background-color: #ED706E;
+  color: #fff;
+  font-family: 'Times New Roman', '楷体', 'Kai', 'STKai', serif;
+}
+
+#main-nav {
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      padding: 0 1em;
+      cursor: pointer;
+      color: white;
+      &:hover {
+        color: rgba(255, 255, 255, 0.75);
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          color: rgba(255, 255, 255, 0.75);
+        }
+      }
+    }
+  }
+}
+
+.address {
+  p {
+    font-size: 1.25em;
+    text-align: center;
+  }
+}
+
+.schedule {
+  text-align: center;
 }
 
 /* Responsive: mobile version < 1440px */
